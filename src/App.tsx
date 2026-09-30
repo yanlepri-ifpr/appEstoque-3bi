@@ -5,6 +5,7 @@ import { LoginPage } from './pages/LoginPage'
 import { DashboardLayout } from './pages/DashboardLayout'
 import { DashboardHome } from './pages/DashboardHome'
 import { CategoriasPage } from './pages/CategoriasPage'
+import { ProdutosPage } from './pages/ProdutosPage'
 import { ProtectedRoute } from './routes/ProtectedRoute'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route element={<DashboardLayout />}>
               <Route index element={<DashboardHome />} />
               <Route path="categorias" element={<CategoriasPage />} />
+              <Route path="produtos" element={<ProdutosPage />} />
             </Route>
           </Route>
 
